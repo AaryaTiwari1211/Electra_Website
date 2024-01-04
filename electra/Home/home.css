@@ -28,32 +28,6 @@ body {
 
 /* Navbar Styles */
 
-/* .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--dark-blue);
-  padding: 15px 30px;
-}
-
-.logo span {
-  font-family: var(--heading-font);
-  font-size: var(--heading-font-size);
-  color: var(--white);
-}
-
-.nav-links a {
-  color: var(--white);
-  text-decoration: none;
-  font-size: var(--heading-font-size);
-  font-family: var(--body-font);
-  font-weight: 600;
-  padding: 0 40px;
-}
-
-.nav-links a:hover {
-  text-decoration: underline;
-} */
 .navbar {
   display: flex;
   justify-content: space-between;
