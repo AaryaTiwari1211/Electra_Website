@@ -103,11 +103,10 @@ body {
 
 @media screen and (max-width: 480px) {
   .feedback-card {
-    flex: 0 0 100%; /* Display 1 card per row on mobile devices */
-    margin: 0 5px; /* Adjust margin for better spacing on smaller screens */
+    flex: 0 0 100%;
+    margin: 0 5px;
   }
 }
-/* Other styles for active card, hover effects, etc. */
 
 .name {
   font-size: 24px;
