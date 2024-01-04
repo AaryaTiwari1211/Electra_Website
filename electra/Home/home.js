@@ -36,3 +36,29 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const slide = document.querySelector('.carousel2-slide');
+    let slideValue = 0;
+    const slideStep = 20; // Adjust this value based on the percentage of each brand
+
+    prevBtn.addEventListener('click', function () {
+        slideValue += slideStep;
+        if (slideValue > 0) {
+            slideValue = -((slide.children.length - 5) * slideStep); // Assuming you want to show 5 logos at a time
+        }
+        slide.style.transform = `translateX(${slideValue}%)`;
+    });
+
+    nextBtn.addEventListener('click', function () {
+        slideValue -= slideStep;
+        if (slideValue < -((slide.children.length - 5) * slideStep)) {
+            slideValue = 0; // Reset to the first slide
+        }
+        slide.style.transform = `translateX(${slideValue}%)`;
+    });
+});
+
+
