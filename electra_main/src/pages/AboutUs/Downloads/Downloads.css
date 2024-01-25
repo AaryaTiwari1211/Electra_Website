@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --white: #f9f7f7;
+  --blue-hue-1: #dbe2ef;
+  --blue-hue-2: #3f72af;
+  --dark-blue: #112d4e;
+  --heading-font: "Roboto Slab", serif;
+  --body-font: "Roboto", sans-serif;
+  --heading-font-size: 1.2rem;
+  --body-font-size: 0.8rem;
+}
+
+.thank-you-for 
+{
+  margin: 0;
+  top: 300px;
+  left: 338px;
+  font-weight: bold;
+  width: 764px;
+  height: 256px;
+  font-size: larger;
+  color:#f9f7f7;
+}
+
+.downloadsviraj-child,
+.downloadsviraj-child 
+{
+  top: 146px;
+  background-color: var(--blue-hue-2);
+  height: 652px;
+}
+
+.thank-you-for {
+  margin: 0;
+  position: absolute;
+  top: 277px;
+  left: 58px;
+  font-size: 30px;
+  font-weight: 700;
+  display: inline-block;
+  width: 727px;
+  height: 256px;
+}
+
+.downloadsviraj-item {
+  position: absolute;
+  top: 271px;
+  left: 890px;
+  width: 474px;
+  height: 402px;
+  object-fit: cover;
+}
+
+.downloadsviraj {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  height: 1286px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--heading-size);
+  color: var(--color-white);
+  font-family: var(--heading);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--body-font-size);
+}
+
+.home {
+  width: 100%;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--dark-blue);
+  padding: 15px 30px;
+}
+
+.logo {
+  flex-grow: 1; /* Allow logo to grow and push other elements */
+}
+
+.logo img {
+  width: 50px;
+}
+
+.menu-icon 
+{
+  font-size: 1.5rem;
+  color: var(--white);
+  cursor: pointer;
+  display: none; /* Initially hidden for larger screens */
+}
+
+.nav-links 
+{
+  display: flex;
+  align-items: center;
+}
+
+.nav-links a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: var(--heading-font-size);
+  font-family: var(--body-font);
+  font-weight: 600;
+  padding: 0 20px;
+  transition: opacity 0.3s ease; /* Optional: Add a transition for smoother animation */
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Hamburger menu styles */
+.menu-toggle {
+  display: none; /* Initially hidden */
+}
+
+/* Show the menu when the checkbox is checked */
+.menu-toggle:checked ~ .nav-links {
+  display: block;
+}
+
+/* Show the hamburger menu icon for smaller screens */
+@media screen and (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    display: none; /* Initially hidden for smaller screens */
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links a {
+    padding: 15px 0; /* Adjust padding for better spacing */
+  }
+
+  /* Style the label as the hamburger menu icon */
+  .menu-icon {
+    display: block;
+  }
+
+  /* Show/hide the menu when checkbox is checked */
+  .menu-toggle:checked ~ .nav-links {
+    display: flex;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+.downloads-content{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color:#f9f7f7;
+  font-weight: bold;
+  line-height:42px;
+  font-size: x-large;
+
+}
+
+
+
+@media (max-width: 768px) {
+  
+  
+}
+
+
+
+
+
+
+/* Footer Styles */
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px 50px;
+  background-color: var(--dark-blue);
+  color: var(--white);
+}
+
+.footer-column {
+  flex: 0;
+  padding: 0 15px;
+}
+.footer-column p,
+.footer-column span {
+  font-family: var(--heading-font);
+  font-size: 1rem;
+  color: var(--white);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.footer-links a {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--white);
+  text-decoration: none;
+  font-size: var(--heading-font-size);
+  font-family: var(--heading-font);
+  font-weight: 600;
+}
+
+.footer-logo {
+  max-width: 100px;
+}
+
+.footer-social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer-social img {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .footer-column {
+    flex: 1;
+    text-align: center;
+  }
+
+  .footer-links a {
+    margin-bottom: 15px;
+  }
+
+  .footer-social img {
+    width: 25px;
+    height: 25px;
+    margin-bottom: 15px;
+  }
+}
+

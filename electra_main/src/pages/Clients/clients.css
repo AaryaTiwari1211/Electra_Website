@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --white: #f9f7f7;
+  --blue-hue-1: #dbe2ef;
+  --blue-hue-2: #3f72af;
+  --dark-blue: #112d4e;
+  --heading-font: "Roboto Slab", serif;
+  --body-font: "Roboto", sans-serif;
+  --heading-font-size: 1.2rem;
+  --body-font-size: 0.8rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--body-font-size);
+}
+
+.clients {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Clients Section 1 */
+
+.clients-section1 {
+  width: 100%;
+}
+.clients-section1 img {
+  position: relative;
+  width: 100%;
+}
+.clients-section1 p {
+  position: absolute;
+  font-size: 1.5rem;
+  color: #000;
+  font-weight: 700;
+  bottom: -100px;
+  margin: 0 20px;
+  font-family: var(--heading-font);
+}
+
+@media screen and (max-width: 768px) {
+  .clients-section1 p {
+    display: none;
+  }
+}
+
+/* Feedback Carousel Styles */
+
+.slider-container {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+  padding: 40px 0;
+}
+.slider-container h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: var(--heading-font);
+  margin-bottom: 20px;
+}
+
+.slider {
+  display: flex;
+  width: 80%; /* Adjust based on your preference */
+  margin: 0 auto;
+  transition: transform 0.3s ease;
+}
+
+.feedback-card {
+  flex: 0 0 calc(100% / 4); /* Assuming 4 cards visible */
+  height: 200px; /* Set height as per your design */
+  margin: 0 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+@media screen and (max-width: 1200px) {
+  .slider {
+    width: 90%; /* Adjusted width for medium-sized screens */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .feedback-card {
+    flex: 0 0 calc(100% / 2); /* Display 2 cards on smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .feedback-card {
+    flex: 0 0 100%;
+    margin: 0 5px;
+  }
+}
+
+.name {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.rating {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.comment {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Clients Section 3 */
+
+.clients-section3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 0;
+  background-color: #f9f9f9;
+}
+.clients-section3 h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: var(--heading-font);
+  margin: 20px 0;
+}
+
+.logo-container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap; /* Allows items to wrap to the next line if there's not enough space */
+  justify-content: space-between; /* Center aligns items horizontally */
+  gap: 20px; /* Spacing between each logo */
+  padding: 40px; /* Spacing around the container */
+}
+
+.logo-item {
+  width: calc(25% - 20px); /* 25% width for 4 logos in a row, minus the gap */
+  max-width: 150px; /* Set a max width */
+  height: auto; /* Maintains aspect ratio */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .logo-item {
+    width: calc(
+      50% - 20px
+    ); /* 50% width for 2 logos in a row on smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logo-item {
+    width: 100%; /* 100% width for 1 logo per row on even smaller screens */
+  }
+}
