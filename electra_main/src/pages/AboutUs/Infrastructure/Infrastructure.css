@@ -1,0 +1,252 @@
+.infrastructureviraj-child {
+  position: absolute;
+  top: 83px;
+  left: 0;
+  background-color: var(--color-gainsboro);
+  width: 1440px;
+  height: 174px;
+}
+.infrastructure {
+  margin: 0;
+  position: absolute;
+  top: 154px;
+  left: 611px;
+  font-weight: 700;
+  color: var(--color-black);
+  display: inline-block;
+  width: 235px;
+  height: 32px;
+}
+.elevating-excellence-through-e {
+  display: block;
+}
+.elevating-excellence-through-container1 {
+  width: 100%;
+}
+.elevating-excellence-through-container {
+  margin: 0;
+  position: absolute;
+  top: 305px;
+  left: 66px;
+  color: var(--color-black);
+  display: flex;
+  align-items: center;
+  width: 1325px;
+  height: 352px;
+}
+.clients1,
+.contact-us2,
+.home,
+.productsservices1 {
+  position: absolute;
+  height: 9.88%;
+  width: 5.28%;
+  top: 16.34%;
+  left: 23.47%;
+  display: inline-block;
+}
+
+.infrastructureviraj-inner {
+  position: absolute;
+  left: 0;
+  width: 1440px;
+}
+
+.infrastructureviraj-inner {
+  top: 704px;
+  background-color: var(--blue-hue-2);
+  height: 2748px;
+  mix-blend-mode: normal;
+}
+.making-flawless-products-container {
+  margin: 0;
+  position: absolute;
+  top: 737px;
+  left: 450px;
+  font-weight: 800;
+  display: inline-block;
+  width: 498px;
+  height: 63px;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.infrastructureviraj-child1,
+.infrastructureviraj-child2,
+.infrastructureviraj-child3,
+.infrastructureviraj-child4,
+.rectangle-div {
+  position: absolute;
+  top: 880px;
+  left: 40px;
+  background-color: var(--blue-hue-1);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25) inset;
+  width: 680px;
+  height: 403px;
+}
+.infrastructureviraj-child1,
+.infrastructureviraj-child2,
+.infrastructureviraj-child3,
+.infrastructureviraj-child4 {
+  top: 1363px;
+  left: 720px;
+}
+.infrastructureviraj-child2,
+.infrastructureviraj-child3,
+.infrastructureviraj-child4 {
+  top: 1867px;
+  left: 40px;
+}
+.infrastructureviraj-child3,
+.infrastructureviraj-child4 {
+  top: 2366px;
+  left: 720px;
+}
+.infrastructureviraj-child4 {
+  top: 2873px;
+  left: 40px;
+}
+.amada-bending-machine-1,
+.image-4-icon,
+.image-5-icon {
+  position: absolute;
+  top: 1373px;
+  left: 805px;
+  width: 509px;
+  height: 383px;
+  object-fit: cover;
+}
+.image-4-icon,
+.image-5-icon {
+  top: 1886px;
+  left: 133px;
+  width: 494px;
+  height: 365px;
+}
+.amada-punching {
+  top: 1000px;
+  left: 133px;
+  width: 650px;
+  height: 365px;
+}
+.image-5-icon {
+  top: 2381px;
+  left: 843px;
+  width: 433px;
+  height: 373px;
+}
+.amada-ae-2510-container,
+.amada-rg-m2-container,
+.busbar-machine-container,
+.conveyorised-powder-coating,
+.tank-pretreatment-process-container {
+  margin: 0;
+  position: absolute;
+  top: 1053px;
+  left: 764px;
+  font-size: var(--font-size-8xl);
+  font-weight: 700;
+  display: inline-block;
+  width: 591px;
+  height: 98px;
+}
+.amada-rg-m2-container,
+.busbar-machine-container,
+.conveyorised-powder-coating,
+.tank-pretreatment-process-container {
+  top: 1536px;
+  left: 40px;
+}
+.busbar-machine-container,
+.conveyorised-powder-coating,
+.tank-pretreatment-process-container {
+  top: 2050px;
+  left: 764px;
+}
+.busbar-machine-container,
+.tank-pretreatment-process-container {
+  top: 3047px;
+}
+.tank-pretreatment-process-container {
+  top: 2540px;
+  left: 77px;
+}
+.image-6-icon {
+  position: absolute;
+  top: 2881px;
+  left: 134px;
+  width: 477px;
+  height: 388px;
+  object-fit: cover;
+}
+.and-more {
+  margin: 0;
+  position: absolute;
+  top: 3379px;
+  left: 1213px;
+  font-weight: 700;
+  text-align: left;
+  display: inline-block;
+  width: 329px;
+  height: 60px;
+}
+.infrastructureviraj {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  height: 3452px;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--heading-size);
+  color: var(--color-white);
+  font-family: var(--heading);
+}
+/* Add this at the end of your CSS file */
+
+@media only screen and (max-width: 768px) {
+  .navbar-items {
+    width: 100%;
+    text-align: center;
+  }
+
+  .about-us,
+  .productsservices,
+  .clients,
+  .contact-us,
+  .contact-us1 {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+
+  .navbardefault-child,
+  .infrastructureviraj,
+  .infrastructureviraj-inner,
+  .making-flawless-products-container,
+  .rectangle-div,
+  .infrastructureviraj-child,
+  .infrastructureviraj-child1,
+  .infrastructureviraj-child2,
+  .infrastructureviraj-child3,
+  .infrastructureviraj-child4,
+  .amada-bending-machine-1,
+  .image-4-icon,
+  .image-5-icon,
+  .amada-ae-2510-container,
+  .amada-rg-m2-container,
+  .busbar-machine-container,
+  .conveyorised-powder-coating,
+  .tank-pretreatment-process-container,
+  .image-6-icon,
+  .and-more {
+    width: 100%;
+    left: 0;
+  }
+
+  .navbardefault {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .infrastructureviraj {
+    height: auto;
+  }
+}
