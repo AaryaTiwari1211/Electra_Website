@@ -1,9 +1,13 @@
 import React from 'react'
 
-const Aboutus = () => {
+const AboutUs = () => {
+    function toggleCollapsible() {
+        var collapsibleContent = document.getElementById("collapsibleContent");
+        collapsibleContent.classList.toggle("active");
+    }
     return (
-        <div>Aboutus</div>
+        <div>AboutUs</div>
     )
 }
 
-export default Aboutus
+export default AboutUs
