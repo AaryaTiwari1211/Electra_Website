@@ -1,8 +1,6 @@
-/*contact-section1*/
 .contact-section {
   background-color: #d9d9d9;
   height: 40vh;
-  /* 2/3 of the screen */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,7 +12,6 @@
   font-size: 35px;
 }
 
-/*contact-section2 */
 .contact-section-add {
   display: flex;
   background-color: #fff;
@@ -65,7 +62,6 @@ p {
   height: 25vh;
   background-color: #3f72af;
   color: white;
-  position: relative;
 }
 
 .browse-button {
@@ -141,13 +137,9 @@ p {
   border-radius: 5px;
   display: block;
   margin: 0 auto;
-  /* Center the submit button */
 }
 
-/* Responsive Styles */
-
 @media only screen and (max-width: 768px) {
-  /* Adjustments for smaller screens */
 
   .nav-links a {
     padding: 0 10px;

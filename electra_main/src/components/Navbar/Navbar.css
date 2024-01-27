@@ -1,0 +1,86 @@
+/* Navbar Styles */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--dark-blue);
+  padding: 15px 30px;
+}
+
+.logo {
+  flex-grow: 1;
+}
+
+.logo img {
+  width: 50px;
+}
+
+.menu-icon {
+  font-size: 1.5rem;
+  color: var(--white);
+  cursor: pointer;
+  display: none;
+  /* Initially hidden for larger screens */
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: var(--heading-font-size);
+  font-family: var(--body-font);
+  font-weight: 600;
+  padding: 0 20px;
+  transition: opacity 0.3s ease;
+  /* Optional: Add a transition for smoother animation */
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Hamburger menu styles */
+.menu-toggle {
+  display: none;
+  /* Initially hidden */
+}
+
+/* Show the menu when the checkbox is checked */
+.menu-toggle:checked ~ .nav-links {
+  display: block;
+}
+
+/* Show the hamburger menu icon for smaller screens */
+@media screen and (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    /* Initially hidden for smaller screens */
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links a {
+    padding: 15px 0;
+    /* Adjust padding for better spacing */
+  }
+
+  /* Style the label as the hamburger menu icon */
+  .menu-icon {
+    display: block;
+  }
+
+  /* Show/hide the menu when checkbox is checked */
+  .menu-toggle:checked ~ .nav-links {
+    display: flex;
+  }
+}

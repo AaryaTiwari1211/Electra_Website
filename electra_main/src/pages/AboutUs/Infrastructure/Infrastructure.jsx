@@ -1,5 +1,5 @@
 import React from 'react'
-
+import './Infrastructure.css'
 const Infrastructure = () => {
     return (
         <>
@@ -47,7 +47,7 @@ const Infrastructure = () => {
                     >
                 </p>
                 <div class="rectangle-div">
-                    <img class="amada-punching" alt="" src="./AMADA PUNCHING MACHINE.jpg"/>
+                    <img class="amada-punching" alt="" src="./AMADA PUNCHING MACHINE.jpg" />
                 </div>
 
                 <div class="infrastructureviraj-child1"></div>
