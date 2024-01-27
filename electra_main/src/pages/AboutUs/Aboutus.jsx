@@ -76,13 +76,7 @@ const AboutUs = () => {
                 <div class="electras-mission-info">
                     <h1 class="electras-mission-head">Electra’s Mission</h1>
                     <p>
-                        Our mission is to carve a global identity as a premier provider of data and voice services, offering
-                        end-to-end
-                        solutions from design and installation to comprehensive user training. What sets us apart is not
-                        just our products
-                        and services, but the enduring relationships we build with our clients, driven by personalized
-                        attention and an
-                        unwavering commitment to excellence. Electra Enterprises: Where Innovation Meets Reliability.
+                        Our mission is to carve a global identity as a premier provider of end-to-end solutions, offering comprehensive user training from design and installation. What sets us apart is not just our products and services, but the enduring relationships we build with our clients, driven by personalized attention and an unwavering commitment to excellence. Electra Enterprises: Where Innovation Meets Reliability.
                     </p>
                 </div>
                 <div class="electras-mission-img">
