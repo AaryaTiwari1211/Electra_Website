@@ -201,7 +201,7 @@
 }
 /* Add this at the end of your CSS file */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 980px) {
   .navbar-items {
     width: 100%;
     text-align: center;
@@ -302,7 +302,7 @@
   margin-bottom: 20px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 980px) {
   .footer {
     flex-direction: column;
     align-items: center;

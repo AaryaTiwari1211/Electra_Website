@@ -1,0 +1,86 @@
+/* BannerCarousel.css */
+
+.banner-carousel {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Set the desired fixed height */
+  margin: 0 auto;
+}
+
+.banner {
+  display: none;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.banner.active {
+  display: block;
+  opacity: 1;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintain aspect ratio while covering the container */
+  border-radius: 0px; /* Adjust border-radius as needed */
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.banner {
+  flex: 0 0 100%;
+}
+
+.prev-btn,
+.next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  outline: none;
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 980px) {
+  .banner {
+    flex: 0 0 100%; /* Set to full width on smaller screens */
+  }
+  .banner-carousel {
+    width: 100%;
+    height: 50vh; /* Set to desired height on smaller screens */
+  }
+  .banner img {
+    border-radius: 0px; /* Adjust border-radius as needed */
+    object-fit: cover; /* Maintain aspect ratio while covering the container */
+    width: 100%; /* Ensure the image takes the full width */
+    height: 100%; /* Maintain aspect ratio */
+  }
+}
+
+/* Additional styles for smaller screens if needed */
+
+@media (max-width: 480px) {
+  .prev-btn,
+  .next-btn {
+    font-size: 18px; /* Adjust button font size for smaller screens */
+  }
+}

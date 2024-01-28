@@ -242,7 +242,7 @@ p {
 
 /* Responsive Styles */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 980px) {
     /* Adjustments for smaller screens */
 
     .nav-links a {

@@ -1,0 +1,44 @@
+/* SimpleCarousel.css */
+
+.simple-carousel {
+  position: relative;
+  overflow: hidden;
+  padding : 10px 0;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.logo {
+  flex: 0 0 20%; /* Show 5 logos in desktop */
+  box-sizing: border-box;
+  padding: 0 5px;
+}
+
+.logo img {
+  width: 75px;
+  height: 50px;
+}
+
+.prev-btn,
+.next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  outline: none;
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}

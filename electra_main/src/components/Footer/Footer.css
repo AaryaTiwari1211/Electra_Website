@@ -32,9 +32,6 @@
   font-weight: 600;
 }
 
-.footer-logo {
-  max-width: 100px;
-}
 
 .footer-social a {
   display: flex;
@@ -49,7 +46,7 @@
   margin-bottom: 20px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 980px) {
   .footer {
     flex-direction: column;
     align-items: center;

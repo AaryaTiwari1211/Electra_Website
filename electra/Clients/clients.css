@@ -48,7 +48,7 @@ body {
   font-family: var(--heading-font);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 980px) {
   .clients-section1 p {
     display: none;
   }
@@ -95,7 +95,7 @@ body {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 980px) {
   .feedback-card {
     flex: 0 0 calc(100% / 2); /* Display 2 cards on smaller screens */
   }
@@ -156,7 +156,7 @@ body {
 }
 
 /* Responsive adjustments */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 980px) {
   .logo-item {
     width: calc(
       50% - 20px

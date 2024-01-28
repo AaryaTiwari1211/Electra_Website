@@ -56,7 +56,7 @@
 }
 
 /* Show the hamburger menu icon for smaller screens */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 980px) {
   .menu-icon {
     display: block;
   }

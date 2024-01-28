@@ -14,12 +14,9 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-body {
-  font-family: var(--body-font);
-  font-size: var(--body-font-size);
-}
 
 /*navbar*/
 .navbar {

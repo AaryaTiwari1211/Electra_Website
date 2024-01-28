@@ -14,7 +14,7 @@
 
 
 /* Media Queries */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 980px) {
     .content-qp {
         padding-left: 20px; /* Adjust as needed */
         padding-right: 20px; /* Adjust as needed */
@@ -113,7 +113,7 @@ body {
 }
 
 /* Media Query for font size in smaller screens */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 980px) {
     .content-qp {
         font-size: var(--body-font-size); /* Set to the default font size for smaller screens */
         padding-right: 20px; /* Adjust as needed */
@@ -171,7 +171,7 @@ body {
     margin-bottom: 20px;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 980px) {
     .footer {
       flex-direction: column;
       align-items: center;

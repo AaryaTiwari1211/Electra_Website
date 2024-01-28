@@ -31,7 +31,7 @@
 }
 
 /* Media Query for font size in smaller screens */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 980px) {
   .content-qp {
     font-size: var(
       --body-font-size

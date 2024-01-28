@@ -46,7 +46,7 @@
   font-family: var(--heading-font);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 980px) {
   .clients-section1 p {
     display: none;
   }
@@ -88,13 +88,7 @@
   right: 10px;
 }
 
-@media screen and (max-width: 1200px) {
-  .slider {
-    width: 90%;
-  }
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 980px) {
   .feedback-card {
     flex: 0 0 calc(100% / 2);
   }
@@ -154,7 +148,7 @@
   height: auto;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 980px) {
   .logo-item {
     width: calc(50% - 20px);
   }

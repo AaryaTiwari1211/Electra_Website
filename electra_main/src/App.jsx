@@ -1,7 +1,6 @@
 import React from 'react'
 import './App.css'
 import Home from './pages/Home/Home.jsx'
-import Videos from './pages/Videos/Videos.jsx'
 import ContactUs from './pages/ContactUs/ContactUs.jsx'
 import Downloads from './pages/AboutUs/Downloads/Downloads'
 import Clients from './pages/Clients/Clients.jsx'
@@ -17,7 +16,6 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/videos" element={<Videos />} />
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/contactus" element={<ContactUs />} />
         <Route path="/downloads" element={<Downloads />} />
