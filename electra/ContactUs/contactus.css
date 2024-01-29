@@ -73,10 +73,6 @@ body {
     font-family: var(--body-font);
 }
 
-.footer-logo {
-    max-width: 100px;
-}
-
 .footer-social a {
     display: flex;
     align-items: center;

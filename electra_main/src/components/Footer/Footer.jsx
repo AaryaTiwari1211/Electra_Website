@@ -1,32 +1,41 @@
 import React from 'react';
 import './Footer.css';
-
+import { FooterData as data } from '../../utils/footer';
 const Footer = () => {
     return (
         <div className="footer">
             <div className="footer-column">
-                <img src="/logo.svg" alt="Logo" className="footer-logo" />
+                <img src={data.logo} alt="Logo" className="footer-logo" />
             </div>
             <div className="footer-column">
                 <div className="footer-links">
-                    <a href="#">About Us</a>
-                    <a href="#">Products/Services</a>
-                    <a href="#">Clients</a>
-                    <a href="#">Contact Us</a>
+                    {
+                        data.links.map((link, index) => {
+                            return (
+                                <a href={link.url} key={index} className=''>{link.title}</a>
+                            )
+                        })
+                    }
                 </div>
             </div>
             <div className="footer-column">
-                <p>123 Main St</p>
-                <p>City, Country</p>
-                <p>Email: info@example.com</p>
-                <p>Phone: +1234567890</p>
+                {
+                    data.address.map((address, index) => {
+                        return (
+                            <p>{address}</p>
+                        )
+                    })
+                }
             </div>
             <div className="footer-column">
                 <div className="footer-social">
-                    <a href="#"><img src="footer/facebook.png" alt="Facebook" /></a>
-                    <a href="#"><img src="footer/twitter.png" alt="Twitter" /></a>
-                    <a href="#"><img src="footer/instagram.jpg" alt="Instagram" id="insta" /></a>
-                    <a href="#"><img src="footer/linkedin.png" alt="LinkedIn" /></a>
+                    {
+                        data.social_media.map((social, index) => {
+                            return (
+                                <a href={social.url} key={index} className=''><img src={social.image} alt="Social Media" /></a>
+                            )
+                        })
+                    }
                 </div>
             </div>
         </div>

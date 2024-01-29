@@ -4,17 +4,6 @@ import { HomeData as data } from '../../utils/home'
 import BrandCarousel from '../../components/BrandCarousel/BrandCarousel'
 import BannerCarousel from '../../components/BannerCarousel/BannerCarousel'
 
-const ServicesLeft = ({ obj }) => {
-    return (
-        <div className="service">
-            <img src={obj.image} alt="Sample Photo" className="service-image" />
-            <div className="service-text">
-                <h3>{obj.title}</h3>
-            </div>
-        </div>
-    )
-}
-
 const ServicesCard = ({ src, title }) => {
     return (
         <div className="section2-card">
@@ -26,7 +15,19 @@ const ServicesCard = ({ src, title }) => {
     )
 }
 
-const ProductSection = () => {
+const ProductCard = ({ src, title }) => {
+    return (
+        <div className="card">
+            <img src={src} alt="Sample Photo" className="card-img-top" />
+            <div className="read-more-section">
+                <button className="read-more-btn">{title}</button>
+                <span className="arrow">&#8594;</span>
+            </div>
+        </div>
+    )
+}
+
+const ServicesSection = () => {
     return (
         <div className="section2">
             <div className="section2-inner">
@@ -59,42 +60,19 @@ const ProductSection = () => {
         </div>
     )
 }
-const ServicesSection = () => {
+const ProductSection = () => {
     return (
         <div className="section3">
             <div className="section3-inner">
                 Our Products
                 <div className="card-container">
-                    <div className="card">
-                        <img src="https://via.placeholder.com/300" alt="Sample Photo" className="card-img-top" />
-                        <div className="read-more-section">
-                            <button className="read-more-btn">Read More</button>
-                            <span className="arrow">&#8594;</span>
-                        </div>
-                    </div>
-                    <div className="card">
-                        <img src="https://via.placeholder.com/300" alt="Sample Photo" className="card-img-top" />
-                        <div className="read-more-section">
-                            <button className="read-more-btn">Read More</button>
-                            <span className="arrow">&#8594;</span>
-                        </div>
-                    </div>
-                </div>
-                <div className="card-container">
-                    <div className="card">
-                        <img src="https://via.placeholder.com/300" alt="Sample Photo" className="card-img-top" />
-                        <div className="read-more-section">
-                            <button className="read-more-btn">Read More</button>
-                            <span className="arrow">&#8594;</span>
-                        </div>
-                    </div>
-                    <div className="card">
-                        <img src="https://via.placeholder.com/300" alt="Sample Photo" className="card-img-top" />
-                        <div className="read-more-section">
-                            <button className="read-more-btn">Read More</button>
-                            <span className="arrow">&#8594;</span>
-                        </div>
-                    </div>
+                    {
+                        data.homeProducts.map((product, index) => {
+                            return (
+                                <ProductCard src={product.image} title={product.title} key={index} />
+                            )
+                        })
+                    }
                 </div>
             </div>
         </div>
@@ -114,9 +92,12 @@ const Home = () => {
                     </p>
                 </div>
             </div>
-            <ProductSection />
             <ServicesSection />
-            <BrandCarousel logos={data.brandCarouselImages} />
+            <ProductSection />
+            <div className='brand-carousel-container'>
+                <h2 className=''>Our Brands</h2>
+                <BrandCarousel logos={data.brandCarouselImages} />
+            </div>
         </>
     )
 }

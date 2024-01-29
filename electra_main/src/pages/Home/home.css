@@ -140,7 +140,6 @@
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease-in-out;
-  font-family: var(--body-font);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -162,11 +161,12 @@
   width: 100%;
   opacity: 0.9;
   cursor: pointer;
+  transition: opacity 0.3s ease;
 }
 .section2-read-more-banner p {
   padding: 0 20px;
-  font-family: var(--body-font);
-  font-size: 1rem;
+  font-family: var(--heading-font);
+  font-size: 1.2rem;
 }
 
 .section2-read-more-banner:hover {
@@ -180,6 +180,15 @@
 @media (max-width: 980px) {
   .section2-inner {
     flex-direction: column;
+  }
+  .service-text {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    opacity: 1;
+    background-color: transparent;
   }
 
   .section2-left,
@@ -210,14 +219,16 @@
 
 .section3-inner {
   font-family: var(--heading-font);
-  font-size: 1.5rem;
+  font-size: 2rem;
+  color: var(--dark-blue);
   font-weight: 700;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
+  justify-content: center;
   background-color: var(--blue-hue-1);
   height: 90%;
-  padding: 20px;
+  padding: 40px;
   margin: 40px 0;
   width: 100%;
 }
@@ -225,30 +236,34 @@
 .card-container {
   display: flex;
   justify-content: space-between;
-  padding: 0 40px;
+  padding: 0 20px; /* Adjust padding as needed */
   margin: 40px;
   flex-wrap: wrap;
-  width: 100%;
 }
 
 .card {
-  /* 2 cards in a row with some space */
+  width: 400px;
+  height: 600px;
   background-color: #fff;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin: 20px 40px;
+  margin: 20px; /* Adjust margin as needed */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card-img-top {
   width: 100%;
-  height: auto;
+  height: 100%;
+  border-radius: 0px;
+  object-fit: cover; /* Ensure the image covers the entire container */
 }
 
 .read-more-section {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 10px;
   background-color: var(--dark-blue);
 }
@@ -259,148 +274,34 @@
   border: none;
   border-radius: 4px;
   margin-right: 10px;
+  font-family: var(--heading-font);
+  font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
+
 
 .arrow {
   display: flex;
   align-items: center;
   justify-content: center;
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 2rem;
   cursor: pointer;
 }
 
-/* Section 4 Styles */
-
-.carousel2-container {
-  width: 100%;
-  overflow: hidden;
-  position: relative; /* Add position relative for absolute positioning */
-}
-
-.carousel2-slide img {
-  flex: 0 0 20%; /* Set each brand to occupy 20% of the container width */
-  max-width: 100px; /* Set max-width for each brand */
-  height: auto; /* Maintain aspect ratio */
-  margin: 0 50px; /* Add some spacing between brands */
-}
-
-/* Adjust the position of the slide */
-.carousel2-slide {
+.brand-carousel-container{
   display: flex;
-  transition: transform 0.3s ease;
-  position: relative;
-  width: 70%; /* Width is set to accommodate 5 logos at a time */
-  padding: 20px;
-}
-
-/* Styles for carousel navigation buttons */
-#prevBtn,
-#nextBtn {
-  background-color: #fff;
-  color: var(--dark-blue);
-  padding: 10px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin: 0 10px;
-  z-index: 2;
-  position: absolute; /* Positioning the buttons */
-  top: 50%; /* Adjust the vertical position */
-  transform: translateY(-50%); /* Center align vertically */
-}
-
-#prevBtn {
-  left: 0; /* Align to the left */
-}
-
-#nextBtn {
-  right: 0; /* Align to the right */
-}
-
-#prevBtn i,
-#nextBtn i {
-  font-size: 24px;
-}
-
-#prevBtn:hover,
-#nextBtn:hover {
-  background-color: var(--blue-hue-1);
-}
-
-/* Footer Styles */
-
-.footer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 20px 50px;
-  background-color: var(--dark-blue);
-  color: var(--white);
-}
-
-.footer-column {
-  flex: 0;
-  padding: 0 15px;
-}
-.footer-column p,
-.footer-column span {
-  font-family: var(--heading-font);
-  font-size: 1rem;
-  color: var(--white);
-  font-weight: 600;
-  white-space: nowrap;
-}
-
-.footer-links a {
-  display: block;
-  margin-bottom: 10px;
-  color: var(--white);
-  text-decoration: none;
-  font-size: var(--heading-font-size);
-  font-family: var(--heading-font);
-  font-weight: 600;
-}
-
-.footer-logo {
-  max-width: 100px;
-}
-
-.footer-social a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
+  gap: 10px;
+  margin: 20px 0;
 }
 
-.footer-social img {
-  width: 30px;
-  height: 30px;
-  margin-bottom: 20px;
-}
-
-@media screen and (max-width: 980px) {
-  .footer {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-
-  .footer-column {
-    flex: 1;
-    text-align: center;
-  }
-
-  .footer-links a {
-    margin-bottom: 15px;
-  }
-
-  .footer-social img {
-    width: 25px;
-    height: 25px;
-    margin-bottom: 15px;
-  }
+.brand-carousel-container h2{
+  font-family: var(--heading-font);
+  font-size: 2rem;
+  color: var(--dark-blue);
+  font-weight: 700;
+  text-align: center;
+  margin: 40px 0;
 }

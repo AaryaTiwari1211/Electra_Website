@@ -6,9 +6,21 @@
   padding: 20px 50px;
   background-color: var(--dark-blue);
   color: var(--white);
+  align-items: center;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100px;
+  height: 100px;
 }
 
 .footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   flex: 0;
   padding: 0 15px;
 }
@@ -19,19 +31,24 @@
   font-size: 1rem;
   color: var(--white);
   font-weight: 600;
-  white-space: nowrap;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .footer-links a {
-  display: block;
+  display: inline-block;
   margin-bottom: 10px;
   color: var(--white);
   text-decoration: none;
   font-size: var(--heading-font-size);
   font-family: var(--heading-font);
   font-weight: 600;
+  white-space: nowrap;
 }
-
 
 .footer-social a {
   display: flex;

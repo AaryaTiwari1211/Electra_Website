@@ -48,10 +48,22 @@ export const HomeData = {
         brandCarouselImage9
     ],
     homeProducts: [
-        productImage1,
-        productImage2,
-        productImage3,
-        productImage4
+        {
+            image: productImage1,
+            title: 'Cable Tray'
+        },
+        {
+            image: productImage2,
+            title: 'MCC Panel'
+        },
+        {
+            image: productImage3,
+            title: 'PLC'
+        },
+        {
+            image: productImage4,
+            title: 'Power Control Centre Panel'
+        }
     ],
     homeServices: [
         {
