@@ -56,18 +56,12 @@ const AboutUs = () => {
                 <div class="content-electra-info">
                     <h1 class="content-electra-info-head">Electra’s Vision</h1>
                     <p>
-                        Positioned as a distinguished service provider, we offer a comprehensive suite of premium services,
-                        ranging
-                        from Electrical Contractor Services to Transformer Oil Filtration, Voice and Data Integration
-                        Solutions, Breaker
-                        Panel Erection, and meticulous Fabrication & Installation of Cable Trays. Beyond our service
-                        commitment, we've
-                        ventured into manufacturing, establishing ourselves as a trusted exporter and supplier. Our
-                        specialization
-                        encompasses G.I., M.S., Alu., S.S., and FRP Cable Trays, Cable Tray Support Systems, Industrial
-                        Safety Equipment,
-                        and a variety of other high-quality products. Our unwavering dedication is at the core of delivering
-                        excellence,
+                        Positioned as a distinguished service provider, we offer a comprehensive suite of premium services, ranging from
+                        Electrical Contractor Services to Breaker Panel Erection, and meticulous Fabrication & Installation of Cable Trays.
+                        Beyond our service commitment, we've ventured into manufacturing,
+                        establishing ourselves as a trusted exporter and supplier.
+                        Our specialization encompasses G.I., M.S., Alu., S.S., and FRP Cable Trays, Cable Tray Support Systems, Industrial Safety Equipment, and a variety of other high-quality products.
+                        Our unwavering dedication is at the core of delivering excellence,
                         both in our services and manufacturing pursuits.
                     </p>
                 </div>
@@ -76,7 +70,11 @@ const AboutUs = () => {
                 <div class="electras-mission-info">
                     <h1 class="electras-mission-head">Electra’s Mission</h1>
                     <p>
-                        Our mission is to carve a global identity as a premier provider of end-to-end solutions, offering comprehensive user training from design and installation. What sets us apart is not just our products and services, but the enduring relationships we build with our clients, driven by personalized attention and an unwavering commitment to excellence. Electra Enterprises: Where Innovation Meets Reliability.
+                        Our mission is to carve a global identity as a premier provider of end-to-end solutions,
+                        offering comprehensive user training from design and installation.
+                        What sets us apart is not just our products and services,
+                        but the enduring relationships we build with our clients, driven by personalized attention and an unwavering commitment to excellence.
+                        Electra Enterprises: Where Innovation Meets Reliability.
                     </p>
                 </div>
                 <div class="electras-mission-img">
