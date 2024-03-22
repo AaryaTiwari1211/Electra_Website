@@ -1,59 +1,42 @@
-.thank-you-for {
-  margin: 0;
-  top: 300px;
-  left: 338px;
-  font-weight: bold;
-  width: 764px;
-  height: 256px;
-  font-size: larger;
-  color: #f9f7f7;
-}
 
-.downloadsviraj-child,
-.downloadsviraj-child {
-  top: 146px;
+
+.downloads-main {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
   background-color: var(--blue-hue-2);
-  height: 652px;
 }
 
-.thank-you-for {
-  margin: 0;
-  position: absolute;
-  top: 277px;
-  left: 58px;
-  font-size: 30px;
-  font-weight: 700;
-  display: inline-block;
-  width: 727px;
-  height: 256px;
-}
-
-.downloadsviraj-item {
-  position: absolute;
-  top: 271px;
-  left: 890px;
-  width: 474px;
-  height: 402px;
-  object-fit: cover;
-}
-
-.downloadsviraj {
-  width: 100%;
-  position: relative;
-  background-color: var(--color-white);
-  height: 1286px;
-  overflow: hidden;
-  text-align: left;
-  font-size: var(--heading-size);
-  color: var(--color-white);
-  font-family: var(--heading);
+.downloads-left {
+  flex: 1;
+  padding: 50px;
 }
 
 .downloads-content {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  color: #f9f7f7;
-  font-weight: bold;
-  line-height: 42px;
-  font-size: x-large;
+  font-size: 24px;
+  font-family: var(--heading-font);
+  color: #fff;
+  font-weight: 500;
+}
+
+.downloads-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.downloads-button:hover {
+  background-color: #0056b3;
+}
+
+.downloadsimage {
+    flex: 1;
+    height: 60vh;
+    border-radius: 10px;
+    padding: 20px;
 }
