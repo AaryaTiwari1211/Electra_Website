@@ -12,7 +12,6 @@
     position: relative;
     height: 70vh;
     background-image: url('your-image.jpg');
-    /* Replace 'your-image.jpg' with your actual image path */
     background-size: cover;
     background-position: center;
     color: white;
@@ -27,7 +26,6 @@
 .about-text {
     position: relative;
     z-index: 2;
-    /* background: rgba(0, 0, 0, 0.5); Remove the black background */
     padding: 20px;
     border-radius: 10px;
     font-size: 30px;
@@ -38,9 +36,7 @@
     position: absolute;
     bottom: 80px;
     left: 12%;
-    /* Adjust the left position as needed */
     background-color: #6ba1c4;
-    /* Button color */
     color: white;
     border: none;
     padding: 20px 30px;
@@ -83,68 +79,56 @@
 /*company-info*/
 .content-comp-info {
     display: flex;
+    flex-wrap: wrap;
     background-color: #112d4e;
-    /* Dark Blue */
     color: white;
-    font-size: 20px;
     width: 100%;
-    padding: 180px 100px;
-    box-sizing: border-box;
-    align-items: center;
-    text-align: center;
-    /* Center text horizontally */
+    justify-content: space-between;
+    padding: 60px 30px;
+    gap: 50px;
 }
 
 .content-main2-info {
     flex: 1;
-    padding: 20px;
-    /* Adjust spacing */
 }
 
 .content-main2-info-head {
-    font-size: 50px;
-    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: 600;
+    font-family: var(--heading-font);
+}
+.content-main2-info-body {
+    font-size: 20px;
+    font-family: var(--body-font);
+    margin-top: 20px;
 }
 
-.content-main2-img {
-    flex: 1;
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    /* Add styling for image container as needed */
-}
 
-img {
+.content-main2-img img {
     width: 100%;
-    height: auto;
+    height: 60vh;
     border-radius: 8px;
-    /* Optional: Add border-radius to the image */
 }
 
 
 /*our thoughts*/
 .our-thoughts-section {
     display: flex;
-    background-color: #3f72af;
-    /* Blue Hue 2 */
+    align-items: start;
+    flex-wrap: wrap;
     color: white;
-    font-size: 20px;
     width: 100%;
-    padding: 180px 100px;
-    box-sizing: border-box;
+    justify-content: space-between;
+    padding: 60px 30px;
+    gap: 50px;
+    background-color: #3f72af;
 }
 
 .our-thoughts-info {
     flex: 1;
-    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.our-thoughts-head {
-    font-size: 50px;
-    margin-bottom: 20px;
 }
 
 .our-thoughts-img {
@@ -155,85 +139,26 @@ img {
     /* Add styling for image container as needed */
 }
 
-img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
 /*vivion*/
 .content-electra-vision {
     display: flex;
-    background-color: white;
-    color: black;
-    font-size: 20px;
+    align-items: start;
+    flex-wrap: wrap;
     width: 100%;
-    padding: 180px 100px;
-    box-sizing: border-box;
-    align-items: center;
-    text-align: center;
-}
-
-.content-electra-info {
-    flex: 1;
-    padding-right: 20px;
-    /* Adjust spacing between content and image */
-}
-
-.content-electra-info-head {
-    font-size: 50px;
-    margin-bottom: 20px;
-}
-
-.content-electra-img {
-    flex: 1;
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    /* Add styling for image container as needed */
-}
-
-img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
+    justify-content: space-between;
+    padding: 60px 30px;
+    gap: 50px;
 }
 
 /*mision*/
 .electras-mission-section {
     display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    padding: 60px 30px;
+    gap: 50px;
     background-color: #3f72af;
-    /* Blue Hue 2 */
     color: white;
-    font-size: 20px;
-    width: 100%;
-    padding: 150px 200px;
-    box-sizing: border-box;
-}
-
-.electras-mission-info {
-    flex: 1;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.electras-mission-head {
-    font-size: 50px;
-    margin-bottom: 20px;
-}
-
-.electras-mission-img {
-    flex: 1;
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    /* Add styling for image container as needed */
-}
-
-img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
 }

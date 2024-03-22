@@ -1,10 +1,9 @@
 import React from 'react'
 import './AboutUs.css'
+import { AboutUsData } from '../../utils/aboutus'
+
 const AboutUs = () => {
-    function toggleCollapsible() {
-        var collapsibleContent = document.getElementById("collapsibleContent");
-        collapsibleContent.classList.toggle("active");
-    }
+    const { companySection, thoughtsSection, visionSection, missionSection } = AboutUsData
     return (
         <>
             <div class="content-main">
@@ -21,64 +20,46 @@ const AboutUs = () => {
             </div>
             <div class="content-comp-info">
                 <div class="content-main2-img">
-                    <img src="your-image.jpg" alt="Company Image" />
+                    <img src={companySection.img} alt="Company Image" />
                 </div>
                 <div class="content-main2-info">
-                    <h1 class="content-main2-info-head">Company Information</h1>
-                    <p>
-                        Electra Enterprises stands as a beacon of excellence in the realm of electrical engineering
-                        services,
-                        headquartered in the vibrant city of Pune. Since our inception in 1987, we've been synonymous with
-                        professionalism and innovation, consistently delivering unparalleled value to our clients.
+                    <h1 class="content-main2-info-head">{companySection.head}</h1>
+                    <p className='content-main2-info-body'>
+                        {companySection.content}
                     </p>
                 </div>
             </div>
             <div class="our-thoughts-section">
-                <div class="our-thoughts-info">
-                    <h1 class="our-thoughts-head">Our Thoughts</h1>
-                    <p>
-                        At the heart of our success is a robust infrastructure that ensures swift and efficient service
-                        delivery,
-                        catering to the diverse needs of our clients. We take pride in adhering to international standards,
-                        adopting cutting-edge technologies, and leveraging our R&D capabilities to manufacture high-quality
-                        products.
+                <div class="content-main2-info">
+                    <h1 class="content-main2-info-head">{thoughtsSection.head}</h1>
+                    <p className='content-main2-info-body'>
+                        {thoughtsSection.content}
                     </p>
                 </div>
-                <div class="our-thoughts-img">
-
-                    <img src="your-image.jpg" alt="Our Thoughts Image" />
+                <div class="content-main2-img">
+                    <img src={thoughtsSection.img} alt="Our Thoughts Image" />
                 </div>
             </div>
             <div class="content-electra-vision">
-                <div class="content-electra-img">
-                    <img src="your-image.jpg" alt="Electra's Vision Image" />
+                <div class="content-main2-img">
+                    <img src={visionSection.img} alt="Electra's Vision Image" />
                 </div>
-                <div class="content-electra-info">
-                    <h1 class="content-electra-info-head">Electra’s Vision</h1>
-                    <p>
-                        Positioned as a distinguished service provider, we offer a comprehensive suite of premium services, ranging from
-                        Electrical Contractor Services to Breaker Panel Erection, and meticulous Fabrication & Installation of Cable Trays.
-                        Beyond our service commitment, we've ventured into manufacturing,
-                        establishing ourselves as a trusted exporter and supplier.
-                        Our specialization encompasses G.I., M.S., Alu., S.S., and FRP Cable Trays, Cable Tray Support Systems, Industrial Safety Equipment, and a variety of other high-quality products.
-                        Our unwavering dedication is at the core of delivering excellence,
-                        both in our services and manufacturing pursuits.
+                <div class="content-main2-info">
+                    <h1 class="content-main2-info-head">{visionSection.head}</h1>
+                    <p className='content-main2-info-body'>
+                        {visionSection.content}
                     </p>
                 </div>
             </div>
             <div class="electras-mission-section">
-                <div class="electras-mission-info">
-                    <h1 class="electras-mission-head">Electra’s Mission</h1>
-                    <p>
-                        Our mission is to carve a global identity as a premier provider of end-to-end solutions,
-                        offering comprehensive user training from design and installation.
-                        What sets us apart is not just our products and services,
-                        but the enduring relationships we build with our clients, driven by personalized attention and an unwavering commitment to excellence.
-                        Electra Enterprises: Where Innovation Meets Reliability.
+                <div class="content-main2-info">
+                    <h1 class="content-main2-info-head">{missionSection.head}</h1>
+                    <p className='content-main2-info-body'>
+                        {missionSection.content}
                     </p>
                 </div>
-                <div class="electras-mission-img">
-                    {/* <img src="your-image.jpg" alt="Electra's Mission Image"> */}
+                <div class="content-main2-img">
+                    <img src={missionSection.img} alt="Electra's Mission Image"/>
                 </div>
             </div>
         </>
