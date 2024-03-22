@@ -24,7 +24,6 @@
 }
 
 .about-text {
-    position: relative;
     z-index: 2;
     padding: 20px;
     border-radius: 10px;
@@ -46,17 +45,14 @@
 }
 
 .collapsible-content {
-    display: none;
     position: absolute;
     bottom: 150px;
-    left: 17%;
-    transform: translateX(-50%);
+    left: 8%;
     background-color: rgba(197, 209, 220, 0.8);
     color: white;
     padding: 20px;
     border-radius: 5px;
     flex-direction: column;
-    /* Display links in a column */
 }
 
 .collapsible-content a {
@@ -136,10 +132,8 @@
     width: 100%;
     height: auto;
     border-radius: 8px;
-    /* Add styling for image container as needed */
 }
 
-/*vivion*/
 .content-electra-vision {
     display: flex;
     align-items: start;
