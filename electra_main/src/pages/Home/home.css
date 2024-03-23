@@ -144,6 +144,9 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 20px;
+  margin: 20px;
+  cursor: pointer;
+  
 }
 
 .section2 .card-img-top {
@@ -253,6 +256,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .card-img-top {

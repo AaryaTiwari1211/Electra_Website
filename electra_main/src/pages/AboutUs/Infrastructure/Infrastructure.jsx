@@ -18,7 +18,6 @@ const Infrastructure = () => {
                     {InfrastructureData.items_sections.items.map((item, index) => {
                         const isOdd = index % 2 === 0; 
                         const flexStyle = isOdd ? { flexDirection: 'row' } : { flexDirection: 'row-reverse' };
-
                         return (
                             <div className="section-3-item" key={index} style={flexStyle}>
                                 <img className='section-3-item-image' src={item.img} alt="item" />

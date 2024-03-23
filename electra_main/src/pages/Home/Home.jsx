@@ -3,29 +3,9 @@ import './Home.css'
 import { HomeData as data } from '../../utils/home'
 import BrandCarousel from '../../components/BrandCarousel/BrandCarousel'
 import BannerCarousel from '../../components/BannerCarousel/BannerCarousel'
+import ProductCard from '../../components/ProductCard/ProductCard'
+import ServicesCard from '../../components/ServicesCard/ServicesCard'
 
-const ServicesCard = ({ src, title }) => {
-    return (
-        <div className="section2-card">
-            <img src={src} alt="Sample Photo" className="card-img-top" />
-            <div className="section2-read-more-banner">
-                <p>{title}</p>
-            </div>
-        </div>
-    )
-}
-
-const ProductCard = ({ src, title }) => {
-    return (
-        <div className="card">
-            <img src={src} alt="Sample Photo" className="card-img-top" />
-            <div className="read-more-section">
-                <button className="read-more-btn">{title}</button>
-                <span className="arrow">&#8594;</span>
-            </div>
-        </div>
-    )
-}
 
 const ServicesSection = () => {
     return (
