@@ -6,15 +6,15 @@ export const FooterData = {
     links: [
         {
             title: 'About',
-            url: '/about'
+            url: '/aboutus'
         },
         {
             title: 'Products & Services',
-            url: '/services'
+            url: '/products-services'
         },
         {
             title: 'Contact',
-            url: '/contact'
+            url: '/contactus'
         },
         {
             title: 'Clients',

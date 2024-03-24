@@ -22,6 +22,8 @@ import productImage4 from '../assets/home/products/power-control-centre-panel.jp
 
 import serviceImage1 from '../assets/home/services/service1.jpg';
 import serviceImage2 from '../assets/home/services/service2.jpg';
+import serviceImage3 from '../assets/home.page.images/Services/3.jpg';
+import serviceImage4 from '../assets/Product.and.Services.Page.images/Services/Transformer Installation.png';
 
 import readMoreImage1 from '../assets/home/services/Read-more-image.jpg';
 
@@ -49,31 +51,48 @@ export const HomeData = {
     ],
     homeProducts: [
         {
+            id: 5,
             image: productImage1,
             title: 'Cable Tray'
         },
         {
+            id: 0,
             image: productImage2,
             title: 'MCC Panel'
         },
         {
+            id: 2,
             image: productImage3,
             title: 'PLC'
         },
         {
+            id: 1,
             image: productImage4,
             title: 'Power Control Centre Panel'
         }
     ],
-    homeServices: [
+    homeServices1: [
         {
             image: serviceImage1,
-            title: 'Sheet Metal Fabrication',
+            title: 'Bustduct Installation',
         },
         {
             image: serviceImage2,
-            title: 'Powder Coating'
+            title: 'Leading Turnkey Electrical Contractor'
         }
+    ],
+    homeServices2: [
+        {
+            id: 7,
+            image: serviceImage3,
+            title: 'Interior and Exterior Electrification Solutions',
+        },
+        {
+            id: 12,
+            image: serviceImage4,
+            title: 'Transformer Installation',
+        },
+
     ],
     readMoreImage: readMoreImage1,
     aboutUsText: `Electra Enterprises is a  professionally managed firm , founded in 1987 , and 

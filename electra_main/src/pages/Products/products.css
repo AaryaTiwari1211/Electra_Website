@@ -35,6 +35,13 @@ h2 {
   margin: 0;
 }
 
+@media screen and (max-width: 768px) {
+  .products-items {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 /* Overlay Styles */
 
 .overlay {

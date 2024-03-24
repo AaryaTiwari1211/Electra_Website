@@ -125,6 +125,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 .service-text h3 {
   font-family: var(--heading-font);
@@ -166,6 +167,9 @@
   opacity: 0.9;
   cursor: pointer;
   transition: opacity 0.3s ease;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 20px;
 }
 .section2-read-more-banner p {
   padding: 0 20px;
@@ -245,6 +249,15 @@
   flex-wrap: wrap;
 }
 
+@media screen and (max-width: 980px) {
+  .card-container {
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 .card {
   max-width: 400px;
   height: 600px;
@@ -270,8 +283,9 @@
 .read-more-section {
   display: flex;
   justify-content: space-between;
-  padding: 10px;
+  padding: 10px 20px;
   background-color: var(--dark-blue);
+  
 }
 
 .read-more-btn {
@@ -284,6 +298,7 @@
   font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-weight: 700;
 }
 
 .arrow {

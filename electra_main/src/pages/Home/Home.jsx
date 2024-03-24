@@ -14,7 +14,7 @@ const ServicesSection = () => {
                 <div className=" section2-left">
                     <h1>Services</h1>
                     {
-                        data.homeServices.map((service, index) => {
+                        data.homeServices1.map((service, index) => {
                             return (
                                 <div className="service" key={index}>
                                     <img src={service.image} alt="Sample Photo" className="service-image" />
@@ -29,9 +29,9 @@ const ServicesSection = () => {
                 <div className="section2-right">
                     <div width="100%"></div>
                     {
-                        data.homeServices.map((service, index) => {
+                        data.homeServices2.map((service, index) => {
                             return (
-                                <ServicesCard src={service.image} title={service.title} key={index} />
+                                <ServicesCard src={service.image} title={service.title} key={index} id={service.id} />
                             )
                         })
                     }
@@ -49,7 +49,7 @@ const ProductSection = () => {
                     {
                         data.homeProducts.map((product, index) => {
                             return (
-                                <ProductCard src={product.image} title={product.title} key={index} />
+                                <ProductCard src={product.image} title={product.title} key={index} id={product.id} />
                             )
                         })
                     }

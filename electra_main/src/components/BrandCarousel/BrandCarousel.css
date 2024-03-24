@@ -13,8 +13,6 @@
 
 .logo {
   flex: 0 0 20%; /* Show 5 logos in desktop */
-  box-sizing: border-box;
-  padding: 0 5px;
 }
 
 .logo img {

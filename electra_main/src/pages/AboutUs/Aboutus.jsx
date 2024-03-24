@@ -22,8 +22,8 @@ const CollapsibleMenu = () => {
             {!isCollapsed && (
                 <div className="collapsible-content" id="collapsibleContent">
                     <div className="main1-links">
-                        <a href="#">Infrastructure</a>
-                        <a href="#">Quality Policy</a>
+                        <a href="/aboutus/infrastructure">Infrastructure</a>
+                        <a href="/aboutus/qualitypolicy">Quality Policy</a>
                     </div>
                 </div>
             )}

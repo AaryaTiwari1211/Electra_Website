@@ -2,8 +2,10 @@ import React from 'react'
 import './Clients.css'
 import { useRef } from 'react';
 import { useState } from 'react';
+import { clientsData } from '../../utils/clients';
 
 const Clients = () => {
+    const { feedbackData, clients } = clientsData;
     const sliderRef = useRef(null);
     const [slideIndex, setSlideIndex] = useState(0);
     const cardRef = useRef(null);
@@ -18,19 +20,6 @@ const Clients = () => {
         setSlideIndex((prevSlideIndex) => (prevSlideIndex === feedbackData.length - 1 ? 0 : prevSlideIndex + 1));
         sliderRef.current.style.transform = `translateX(-${slideIndex * cardWidth}px)`;
     };
-    const feedbackData = [
-        { name: 'John Doe', rating: '⭐⭐⭐⭐⭐', comment: 'Excellent service! Highly recommended.' },
-        { name: 'Jane Smith', rating: '⭐⭐⭐⭐', comment: 'Great experience with the team.' },
-        { name: 'Alice Johnson', rating: '⭐⭐⭐⭐⭐', comment: 'Fantastic service and quick response.' },
-        { name: 'Bob Anderson', rating: '⭐⭐⭐⭐', comment: 'Very professional and courteous staff.' },
-        { name: 'Charlie Brown', rating: '⭐⭐⭐⭐⭐', comment: 'Impressed with the quality of service.' },
-        { name: 'Eva Miller', rating: '⭐⭐⭐⭐', comment: 'Timely delivery and great communication.' },
-        { name: 'David Wilson', rating: '⭐⭐⭐⭐', comment: 'Efficient and friendly customer support.' },
-        { name: 'Sophie Turner', rating: '⭐⭐⭐⭐⭐', comment: 'Exceptional attention to detail.' },
-        { name: 'George Harris', rating: '⭐⭐⭐⭐', comment: 'Reliable and trustworthy service.' },
-        { name: 'Olivia Davis', rating: '⭐⭐⭐⭐⭐', comment: 'Always exceed expectations.' },
-        // ... add more feedback objects as needed
-    ];
 
     return (
         <>
@@ -61,22 +50,9 @@ const Clients = () => {
             <div className="clients-section3">
                 <h1>Our Clients</h1>
                 <div className="logo-container">
-                    <img src="https://via.placeholder.com/150" alt="Logo 1" className="logo-item" />
-                    <img src="https://via.placeholder.com/150" alt="Logo 2" className="logo-item" />
-                    <img src="https://via.placeholder.com/150" alt="Logo 3" className="logo-item" />
-                    <img src="https://via.placeholder.com/150" alt="Logo 4" className="logo-item" />
-                </div>
-                <div className="logo-container">
-                    <img src="https://via.placeholder.com/150" alt="Logo 1" className="logo-item" />
-                    <img src="https://via.placeholder.com/150" alt="Logo 2" className="logo-item" />
-                    <img src="https://via.placeholder.com/150" alt="Logo 3" className="logo-item" />
-                    <img src="https://via.placeholder.com/150" alt="Logo 4" className="logo-item" />
-                </div>
-                <div className="logo-container">
-                    <img src="https://via.placeholder.com/150" alt="Logo 1" className="logo-item" />
-                    <img src="https://via.placeholder.com/150" alt="Logo 2" className="logo-item" />
-                    <img src="https://via.placeholder.com/150" alt="Logo 3" className="logo-item" />
-                    <img src="https://via.placeholder.com/150" alt="Logo 4" className="logo-item" />
+                    {clients.map((client, index) => (
+                        <img key={index} src={client.img} alt={client.alt} className='logo-item' />
+                    ))}
                 </div>
             </div>
         </>
