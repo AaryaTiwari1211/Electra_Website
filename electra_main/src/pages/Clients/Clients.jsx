@@ -4,22 +4,19 @@ import { useRef } from 'react';
 import { useState } from 'react';
 import { clientsData } from '../../utils/clients';
 
+
+const FeedbackCard = ({ feedback }) => {
+    return (
+        <div className="feedback-card">
+            <h2 className="name">{feedback.name}</h2>
+            <p className="comment">{feedback.comment}</p>
+        </div>
+    )
+
+}
+
 const Clients = () => {
     const { feedbackData, clients } = clientsData;
-    const sliderRef = useRef(null);
-    const [slideIndex, setSlideIndex] = useState(0);
-    const cardRef = useRef(null);
-    const handlePrev = () => {
-        const cardWidth = cardRef.current.offsetWidth + 20;
-        setSlideIndex((prevSlideIndex) => (prevSlideIndex === 0 ? feedbackData.length - 1 : prevSlideIndex - 1));
-        sliderRef.current.style.transform = `translateX(-${slideIndex * cardWidth}px)`;
-    };
-
-    const handleNext = () => {
-        const cardWidth = cardRef.current.offsetWidth + 20;
-        setSlideIndex((prevSlideIndex) => (prevSlideIndex === feedbackData.length - 1 ? 0 : prevSlideIndex + 1));
-        sliderRef.current.style.transform = `translateX(-${slideIndex * cardWidth}px)`;
-    };
 
     return (
         <>
@@ -31,22 +28,14 @@ const Clients = () => {
                     anticipating many more triumphs together.
                 </p>
             </div>
-            <div className="slider-container">
+            <div className='clients-feedback'>
                 <h1>What Our Clients Say</h1>
-                <div className="carousel-container">
-                    <div ref={sliderRef} className="carousel-wrapper">
-                        {feedbackData.map((feedback, index) => (
-                            <div key={index} className="feedback-card" ref={cardRef}>
-                                <h2 className="name">{feedback.name}</h2>
-                                <div className="rating">{feedback.rating}</div>
-                                <p className="comment">{feedback.comment}</p>
-                            </div>
-                        ))}
-                    </div>
-                    <button className="prev-btn" onClick={handlePrev}>&#8249;</button>
-                    <button className="next-btn" onClick={handleNext}>&#8250;</button>
+                <div className="carousel-wrapper">
+                    {feedbackData.map((feedback, index) => (
+                        <FeedbackCard key={index} feedback={feedback} />
+                    ))}
                 </div>
-            </div>
+            </div >
             <div className="clients-section3">
                 <h1>Our Clients</h1>
                 <div className="logo-container">

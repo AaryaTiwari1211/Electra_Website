@@ -35,7 +35,9 @@ const AboutUs = () => {
     const { companySection, thoughtsSection, visionSection, missionSection } = AboutUsData
     return (
         <>
-            <CollapsibleMenu />
+            <div className='collapsible-menu'>
+                <CollapsibleMenu />
+            </div>
             <div className="content-comp-info">
                 <div className="content-main2-img">
                     <img src={companySection.img} alt="Company Image" />

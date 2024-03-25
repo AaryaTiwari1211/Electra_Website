@@ -50,6 +50,7 @@ const Navbar = () => {
             </button>
 
             <div ref={drawerRef} className={`drawer ${drawerOpen ? 'open' : ''}`}>
+                <img src={logo} alt="" width={50} height={50} onClick={()=> Navigate('/') } style={{ cursor: 'pointer'}} />
                 {links.map((link, index) => (
                     <a href={link.url} key={index} onClick={toggleDrawer}>{link.title}</a>
                 ))}

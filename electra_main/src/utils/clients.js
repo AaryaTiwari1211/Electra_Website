@@ -16,16 +16,9 @@ import client12 from '../assets/Clients.Page.images/Philips.jpg'
 
 export const clientsData = {
     feedbackData : [
-        { name: 'John Doe', rating: '⭐⭐⭐⭐⭐', comment: 'Excellent service! Highly recommended.' },
-        { name: 'Jane Smith', rating: '⭐⭐⭐⭐', comment: 'Great experience with the team.' },
-        { name: 'Alice Johnson', rating: '⭐⭐⭐⭐⭐', comment: 'Fantastic service and quick response.' },
-        { name: 'Bob Anderson', rating: '⭐⭐⭐⭐', comment: 'Very professional and courteous staff.' },
-        { name: 'Charlie Brown', rating: '⭐⭐⭐⭐⭐', comment: 'Impressed with the quality of service.' },
-        { name: 'Eva Miller', rating: '⭐⭐⭐⭐', comment: 'Timely delivery and great communication.' },
-        { name: 'David Wilson', rating: '⭐⭐⭐⭐', comment: 'Efficient and friendly customer support.' },
-        { name: 'Sophie Turner', rating: '⭐⭐⭐⭐⭐', comment: 'Exceptional attention to detail.' },
-        { name: 'George Harris', rating: '⭐⭐⭐⭐', comment: 'Reliable and trustworthy service.' },
-        { name: 'Olivia Davis', rating: '⭐⭐⭐⭐⭐', comment: 'Always exceed expectations.' },
+        { name: 'Oerlikon Balzers', comment: 'Thank you for your outstanding efforts in successfully completing the Design, Supply, Installation, Testing & Commissioning of the 11KV Substation and Plant LT electrification work for M/s. Oerlinkon Blazers Coating India Pvt. Ltd. Your team\'s dedication ensured the project\'s success. We look forward to considering you for future projects.' },
+        { name: 'Huf India', comment: 'Electra Enterprises, our electrical contractor, efficiently executed the entire HT and LT electrical installation at our new Chakan plant, meeting the schedule. Their professionalism and attention to safety were commendable.' },
+        { name: 'Philips Electronics', comment: 'During execution of work organisation displayed utmost professionalism and observed every minute detail about safety of men and material. We wish Electra Enterprises every success in their future endeavors.' },
     ],
     clients: [
         { id: 1, img: client1, alt: 'Alfa laval' },
