@@ -1,11 +1,10 @@
 import React from 'react'
 import './Home.css'
 import { HomeData as data } from '../../utils/home'
-import BrandCarousel from '../../components/BrandCarousel/BrandCarousel'
+import LogoCarousel from '../../components/BrandCarousel/BrandCarousel'
 import BannerCarousel from '../../components/BannerCarousel/BannerCarousel'
 import ProductCard from '../../components/ProductCard/ProductCard'
 import ServicesCard from '../../components/ServicesCard/ServicesCard'
-
 
 const ServicesSection = () => {
     return (
@@ -44,7 +43,7 @@ const ProductSection = () => {
     return (
         <div className="section3">
             <div className="section3-inner">
-                Our Products
+                <h1>Our Products</h1>
                 <div className="card-container">
                     {
                         data.homeProducts.map((product, index) => {
@@ -76,7 +75,7 @@ const Home = () => {
             <ProductSection />
             <div className='brand-carousel-container'>
                 <h2 className=''>Our Brands</h2>
-                <BrandCarousel logos={data.brandCarouselImages} />
+                <LogoCarousel />
             </div>
         </>
     )

@@ -1,43 +1,55 @@
-// SimpleCarousel.js
-
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import Slider from 'react-slick';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { HomeData } from '../../utils/home';
 import './BrandCarousel.css';
 
-const BrandCarousel = ({ logos }) => {
-    const [currentIndex, setCurrentIndex] = useState(0);
-    const logosToShow = logos.slice(currentIndex, currentIndex + 5);
-
-    const nextSlide = () => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % logos.length);
+const LogoCarousel = () => {
+    const { brandCarouselImages } = HomeData;
+    const settings = {
+        infinite: true,
+        speed: 300,
+        slidesToShow: 5,
+        slidesToScroll: 3,  
+        arrows: false,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 2,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    initialSlide: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
     };
-
-    const prevSlide = () => {
-        setCurrentIndex((prevIndex) => (prevIndex - 1 + logos.length) % logos.length);
-    };
-
-    useEffect(() => {
-        const interval = setInterval(nextSlide, 3000);
-
-        return () => clearInterval(interval);
-    }, [logos.length]);
 
     return (
-        <div className="simple-carousel">
-            <button className="prev-btn" onClick={prevSlide}>
-                &#9665; 
-            </button>
-            <div className="slider">
-                {logosToShow.map((logo, index) => (
-                    <div key={index} className="logo">
-                        <img src={logo} alt={`Logo ${index + 1}`} />
-                    </div>
-                ))}
-            </div>
-            <button className="next-btn" onClick={nextSlide}>
-                &#9655;
-            </button>
-        </div>
+        <Slider {...settings}>
+            {brandCarouselImages.map((image, index) => (
+                <div key={index} className='logo-outer'>
+                    <img src={image} alt="Brand" width={100} height={80} />
+                </div>
+            ))}
+        </Slider>
     );
 };
 
-export default BrandCarousel;
+export default LogoCarousel;

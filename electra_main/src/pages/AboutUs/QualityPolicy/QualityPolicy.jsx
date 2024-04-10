@@ -3,9 +3,9 @@ import './QP.css'
 
 const QualityPolicy = () => {
     return (
-        <>
-            <h1 id="headee"> Quality Policy</h1>
-            <div class="content-qp">
+        <div className='qp-main'>
+            <h1 className='qp-header'>Quality Policy</h1>
+            <div class="qp-content">
                 <p>
                     At Electra Enterprises, we embark on a journey of crafting excellence as premier manufacturers of
                     Control Panels, Cable Trays, and providers of Turn-key Electrical Projects Contracting, tailored to meet
@@ -23,13 +23,10 @@ const QualityPolicy = () => {
                     <br />
                 </p>
             </div>
-
-            <div class="noter-below">
-                <p id="kj">
-                    We at Electra Craft Excellence with Precision, Passion, and Customer-Centric Mastery.
-                </p>
-            </div>
-        </>
+            <p className='qp-noter'>
+                We at Electra Craft Excellence with Precision, Passion, and Customer-Centric Mastery.
+            </p>
+        </div>
     )
 }
 

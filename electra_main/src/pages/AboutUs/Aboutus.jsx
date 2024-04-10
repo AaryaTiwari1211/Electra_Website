@@ -38,7 +38,8 @@ const AboutUs = () => {
             <div className='collapsible-menu'>
                 <CollapsibleMenu />
             </div>
-            <div className="content-comp-info">
+            
+            <div className="content-comp-info" id='content-comp-info-1'>
                 <div className="content-main2-img">
                     <img src={companySection.img} alt="Company Image" />
                 </div>
@@ -49,7 +50,8 @@ const AboutUs = () => {
                     </p>
                 </div>
             </div>
-            <div className="our-thoughts-section">
+            
+            <div className="content-comp-info" id='content-comp-info-2'>
                 <div className="content-main2-info">
                     <h1 className="content-main2-info-head">{thoughtsSection.head}</h1>
                     <p className='content-main2-info-body'>
@@ -60,7 +62,8 @@ const AboutUs = () => {
                     <img src={thoughtsSection.img} alt="Our Thoughts Image" />
                 </div>
             </div>
-            <div className="content-electra-vision">
+            
+            <div className="content-comp-info" id='content-comp-info-3'>
                 <div className="content-main2-img">
                     <img src={visionSection.img} alt="Electra's Vision Image" />
                 </div>
@@ -71,7 +74,8 @@ const AboutUs = () => {
                     </p>
                 </div>
             </div>
-            <div className="electras-mission-section">
+            
+            <div className="content-comp-info" id='content-comp-info-4'>
                 <div className="content-main2-info">
                     <h1 className="content-main2-info-head">{missionSection.head}</h1>
                     <p className='content-main2-info-body'>

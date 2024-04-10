@@ -40,3 +40,14 @@
 .next-btn {
   right: 10px;
 }
+
+.slick-slide img{
+  display: inline-block;
+}
+
+.logo-outer{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

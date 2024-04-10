@@ -3,7 +3,6 @@ import './Navbar.css';
 import { navbarData } from '../../utils/navbar';
 import { useNavigate } from 'react-router-dom';
 import menu from '../../assets/menu.svg';
-import logo from '../../assets/logo1.jpg';
 import { useEffect } from 'react';
 
 
@@ -36,9 +35,8 @@ const Navbar = () => {
     return (
         <div className="navbar">
             <div className="logo" onClick={() => Navigate('/')}>
-                <img src={logo} alt="Logo" />
+                <img src={logo} alt="Logo" className='logo-image' />
             </div>
-
             <div className="nav-links">
                 {links.map((link, index) => (
                     <a href={link.url} key={index}>{link.title}</a>

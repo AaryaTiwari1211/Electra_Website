@@ -1,41 +1,32 @@
-.qp {
-  flex: 1;
-}
-
-/* Content of qp */
-#headee {
-  padding-top: 40px;
-  padding-left: 20px;
-}
-
-.noter-below {
-  background-color: #3f72af;
-  color: white;
+.qp-main {
+  width: 100%;
+  padding: 30px;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  height: 15vh; /* Adjust as needed */
-  font-size: large;
+  gap: 20px;
 }
 
-/* Content of qp */
-.content-qp {
-  background-color: #ffffff;
-  padding-left: 25px;
-  padding-top: 90px;
-  padding-bottom: 50px;
-  min-height: 500px;
-  padding-right: 600px;
-  line-height: 20px;
+.qp-header {
+  font-family: var(--heading-font);
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+.qp-content {
   font-family: var(--body-font);
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
 }
 
-/* Media Query for font size in smaller screens */
-@media only screen and (max-width: 980px) {
-  .content-qp {
-    font-size: var(
-      --body-font-size
-    ); /* Set to the default font size for smaller screens */
-    padding-right: 20px; /* Adjust as needed */
-  }
+.qp-noter {
+  font-family: var(--body-font);
+  font-size: 0.8em;
+  margin: 20px 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
 }

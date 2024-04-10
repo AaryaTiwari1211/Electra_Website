@@ -11,6 +11,10 @@
   cursor: pointer;
 }
 
+.logo img {
+  width: 50px;
+}
+
 .nav-links {
   display: flex;
   gap: 10px;
